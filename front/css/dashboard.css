@@ -15,3 +15,8 @@
 .collection .collection-item.avatar .secondary-content{
     top:30px;
 }
+
+/* Close */
+.close{
+    position: absolute; bottom: 10px; left: 10px;
+}
