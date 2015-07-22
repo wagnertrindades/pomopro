@@ -6,6 +6,7 @@ nav ul a, nav .brand-logo {
 .card .card-title{
     color: #444;
 }
+
 /* Parallax */
 .parallax-container{
     height: 700px;
@@ -19,9 +20,19 @@ nav ul a, nav .brand-logo {
     position: absolute;
     z-index: 0;
 }
+
 /* Banner */
-#index-banner .header{
+#index-banner .header,
+.parallax2 .header{
     text-shadow: 1px 1px 1px black;
     position: relative;
     z-index: 1;
+}
+
+/* Parallax 2*/
+.parallax2{
+    height: 380px;
+}
+.parallax-container .section{
+    width: 100%;
 }
