@@ -2,3 +2,16 @@
     height: 100%;
     position: fixed;
 }
+
+/* Avatar */
+.collection .collection-item.avatar{
+    min-height: 84px;
+    padding-left: 92px;
+}
+.collection .collection-item.avatar .circle{
+    width: 60px;
+    height: 60px;
+}
+.collection .collection-item.avatar .secondary-content{
+    top:30px;
+}
