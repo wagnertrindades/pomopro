@@ -23,14 +23,14 @@ nav ul a, nav .brand-logo {
 
 /* Banner */
 #index-banner .header,
-.parallax2 .header{
+.parallax-small .header{
     text-shadow: 1px 1px 1px black;
     position: relative;
     z-index: 1;
 }
 
 /* Parallax 2*/
-.parallax2{
+.parallax-small{
     height: 380px;
 }
 .parallax-container .section{
