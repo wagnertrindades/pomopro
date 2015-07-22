@@ -36,3 +36,12 @@ nav ul a, nav .brand-logo {
 .parallax-container .section{
     width: 100%;
 }
+
+/* Técnica */
+.large-numbers{
+    font-size: 4.2rem;
+    color: rgb(38, 166, 154);
+}
+.border-custom{
+    border-top: 2px solid rgb(38, 166, 154);
+}
