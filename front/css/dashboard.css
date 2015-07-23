@@ -20,12 +20,9 @@
     top:30px;
 }
 
-/* Close */
-.btn-close{
+/* Buttons Footer */
+.btns-footer{
     position: absolute; bottom: 10px; left: 10px;
-}
-.btn-pomopro{
-    position: absolute; bottom: 10px; left: 150px;
 }
 
 /*====================================*\
