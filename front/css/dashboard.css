@@ -4,6 +4,7 @@
 .aside{
     height: 100%;
     position: fixed;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
 /* Avatar */
@@ -45,7 +46,8 @@ nav.top-nav a.page-title {
     font-size: 48px;
 }
 
-.content-crono{
+.content-crono,
+.content-perfil{
     margin-top: 10rem;
 }
 
