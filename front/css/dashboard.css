@@ -20,8 +20,11 @@
 }
 
 /* Close */
-.close{
+.btn-close{
     position: absolute; bottom: 10px; left: 10px;
+}
+.btn-pomopro{
+    position: absolute; bottom: 10px; left: 150px;
 }
 
 /*====================================*\
