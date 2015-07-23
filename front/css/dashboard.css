@@ -1,3 +1,6 @@
+/*====================================*\
+    Aside
+\*====================================*/
 .aside{
     height: 100%;
     position: fixed;
@@ -19,4 +22,37 @@
 /* Close */
 .close{
     position: absolute; bottom: 10px; left: 10px;
+}
+
+/*====================================*\
+    Content
+\*====================================*/
+#content.content{
+    height: 100%;
+    padding: 0;
+}
+
+/* Title */
+nav.top-nav {
+    height: 122px;
+    box-shadow: none;
+}
+nav.top-nav a.page-title {
+    line-height: 122px;
+    font-size: 48px;
+}
+
+.content-crono{
+    margin-top: 10rem;
+}
+
+/* Botoes pomodoro */
+.btn-large{
+    margin: 0 5px;
+}
+
+/* Numero Cronometro */
+.crono-number{
+    font-size: 7rem;
+    margin: 4rem 0;
 }

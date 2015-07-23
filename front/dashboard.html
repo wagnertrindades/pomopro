@@ -43,14 +43,14 @@
                         </li>
                         <li>
                             <div class="collapsible-header">
-                                <i class="material-icons teal-text">play_circle_outline</i>
+                                <i class="material-icons red-text">play_circle_outline</i>
                                 Pomodoro's
                             </div>
                             <div class="collapsible-body teal lighten-3"><p>Lorem ipsum dolor sit amet.</p></div>
                         </li>
                         <li>
                             <div class="collapsible-header">
-                                <i class="material-icons teal-text">replay_5</i>
+                                <i class="material-icons blue-text">replay_5</i>
                                 Break's
                             </div>
                             <div class="collapsible-body teal lighten-3"><p>Lorem ipsum dolor sit amet.</p></div>
@@ -74,8 +74,66 @@
                 <!-- /aside -->
                 
                 <!-- content -->
-                <div class="col s9 content">
-                    <!-- Teal page content  -->
+                <div id="content" class="col s9 content offset-s3">
+                    <!-- title -->
+                    <nav class="top-nav teal">
+                        <div class="container">
+                            <div class="nav-wrapper">
+                                <a class="page-title">
+                                    Pomopro Timer
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- /title -->
+
+                    <div class="col m6 offset-m3 content-crono">
+                        <!-- buttons pomodoro -->
+                        <div class="center">
+                            <a class="waves-effect waves-light btn-large red">
+                                <i class="material-icons left">play_circle_outline</i>
+                                Pomodoro
+                            </a>
+                            <a class="waves-effect waves-light btn-large blue">
+                                <i class="material-icons left">replay_5</i>
+                                Break
+                            </a>
+                            <a class="waves-effect waves-light btn-large">
+                                <i class="material-icons left">replay_30</i>
+                                Long Break
+                            </a>
+                        </div>
+                        <!-- buttons pomodoro -->
+
+                        <!-- number -->
+                        <div class="crono-number center">
+                            25:00
+                        </div>
+                        <!-- /number -->
+
+                        <!-- progress -->
+                        <div class="progress red lighten-4">
+                            <div class="determinate red" style="width: 50%"></div>
+                        </div>
+                        <!-- /progress -->
+
+                        <!-- buttons play -->
+                        <div class="center">
+                            <a class="btn-floating btn-large waves-effect waves-light red">
+                                <i class="material-icons">play_arrow</i>
+                            </a>
+                            <a class="btn-floating btn-large waves-effect waves-light blue">
+                                <i class="material-icons">pause</i>
+                            </a>
+                            <a class="btn-floating btn-large waves-effect waves-light teal">
+                                <i class="material-icons">stop</i>
+                            </a>
+                            
+                        </div>
+                        <!-- /buttons play -->
+
+                    </div>                
+
                 </div>
                 <!-- /content -->
 
