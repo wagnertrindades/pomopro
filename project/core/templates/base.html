@@ -16,6 +16,8 @@
         <!-- JS -->
         <script src="{% static "bower_components/jquery/dist/jquery.min.js" %}"></script>
         <script src="{% static "bower_components/materialize/dist/js/materialize.min.js" %}"></script>
+
+        {% block head_files %}{% endblock %}
     </head>
     <body>
         {% block content %}
