@@ -56,6 +56,11 @@ nav ul a, nav .brand-logo {
     height: 45px;
 }
 
+/* Cadastra-se */
+.btn-cadastrar{
+    margin: 50px auto;
+}
+
 /* Footer */
 .social-links li{
     display: inline-block;

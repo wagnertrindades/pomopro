@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pomopro</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- CSS -->
+        <link rel="stylesheet" href="bower_components/materialize/dist/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="css/fonts/flaticon.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- JS -->
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/materialize/dist/js/materialize.min.js"></script>
+    </head>
+    <body>
+        <header>
+
+            <!-- menu -->
+            <nav class="white">
+                <div class="nav-wrapper container">
+                    <a href="#!" class="brand-logo">Pomopro</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="small material-icons">menu</i></a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#">Entrar</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#cadastrar">Cadastre-se</a></li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li><a href="#">Entrar</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#cadastrar">Cadastre-se</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- /menu -->
+
+        </header>
+        <main>
+            
+            <!-- como usar -->
+            <div id="cadastrar" class="container">
+                <div class="section">
+                    <!-- title -->
+                    <div class="row center">
+                        <h3><i class="medium material-icons red-text">settings</i></h3>
+                        <h4>Começe a utilizar agora mesmo...</h4>
+                        <p>Inteiramente gratuito.</p>
+                    </div>
+                    <!-- /title -->
+
+                    <!-- card cadastre-se -->
+                        <div class="row center">
+                            <div class="col s12 l4 offset-l4">
+                                <div class="card white z-depth-3">
+                                    <div class="card-content">
+                                        <span class="card-title">Cadastre-se</span>
+                                        <form class="col s12">
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="name" type="text" class="validate">
+                                                    <label for="name">Nome</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="email" type="email" class="validate">
+                                                    <label for="email">Email</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="password" type="password" class="validate">
+                                                    <label for="password">Senha</label>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="input-field col s12">
+                                                    <input id="confirm-password" type="password" class="validate">
+                                                    <label for="confirm-password">Confirmar Senha</label>
+                                                </div>
+                                            </div>
+                                            <div class="card-action">
+                                                <button class="btn waves-effect waves-light" type="submit" name="action">
+                                                    Cadastrar
+                                                </button>
+                                            </div>
+                                        </form>
+                                        <div>Já é cadastrado? <a href="#">Fazer login</a></div>
+                                        <div>Esqueceu sua senha? <a href="#">Nova senha</a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /card cadastre-se -->
+                </div>
+            </div>
+            <!-- /como usar -->
+        </main>
+
+        <footer class="page-footer red">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Pomopro</h5>
+                <p class="grey-text text-lighten-4">Utilize a técnica Pomodoro, e faça mais em menos tempo...</p>
+              </div>
+              <div class="col l2 offset-l4 s12">
+                <h5 class="white-text">Social Links</h5>
+                <ul class="social-links">
+                    <li>
+                        <a class="grey-text text-lighten-3 flat-icon" href="#!">
+                            <i class="flaticon-facebook29"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="grey-text text-lighten-3 flat-icon" href="#!">
+                            <i class="flaticon-twitter2"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="grey-text text-lighten-3 flat-icon" href="#!">
+                            <i class="flaticon-github12"></i>
+                        </a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2015 Copyright - Wagner Trindade
+            <a class="grey-text text-lighten-4 right" href="#!">wtrindades.com</a>
+            </div>
+          </div>
+        </footer>
+
+        <!-- button menu responsive -->
+        <script>
+            $( document ).ready(function(){
+                $(".button-collapse").sideNav();
+            });
+        </script>
+        <!-- /button menu responsive -->
+    </body>
+</html>

@@ -7,5 +7,7 @@ urlpatterns = patterns('',
     # Logout
     url(r'^logout/$', 'django.contrib.auth.views.logout',
         {'next_page' : 'core:home'}, name='logout'),
+    #Register
+    url(r'^$', 'project.core.views.register', name='register'),
     url(r'^timer/$', 'project.core.views.timer', name='timer'),
 )
