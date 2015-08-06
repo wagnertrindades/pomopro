@@ -2,8 +2,7 @@
 
 {% load static %}
 
-{% block content %}
-
+{% block header %}
     <header>
         <!-- menu -->
         <nav class="white">
@@ -11,8 +10,8 @@
                 <a href="{% url 'core:home' %}" class="brand-logo">Pomopro</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="small material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="#">Entrar</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="{% url 'core:home' %}">Entrar</a></li>
+                    <li><a href="{% url 'core:home' %}#sobre">Sobre</a></li>
                     <li><a href="{% url 'core:register' %}">Cadastre-se</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
@@ -23,7 +22,11 @@
             </div>
         </nav>
         <!-- /menu -->
+    </header>
+{% endblock %}
 
+{% block content %}
+    <main>
         <!-- banner -->
         <div id="index-banner" class="parallax-container">
             <div class="section no-pad-bot">
@@ -78,8 +81,6 @@
         </div>
         <!-- /banner -->
 
-    </header>
-    <main>
         <div class="container">
             <div class="section">
               <!-- icon section   -->
@@ -225,7 +226,10 @@
         </div>
         <!-- /como usar -->
     </main>
+    
+{% endblock %}
 
+{% block footer %}
     <footer class="page-footer red">
       <div class="container">
         <div class="row">
