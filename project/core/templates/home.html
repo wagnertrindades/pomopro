@@ -8,17 +8,17 @@
         <!-- menu -->
         <nav class="white">
             <div class="nav-wrapper container">
-                <a href="#!" class="brand-logo">Pomopro</a>
+                <a href="{% url 'core:home' %}" class="brand-logo">Pomopro</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="small material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="#">Entrar</a></li>
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#cadastrar">Cadastre-se</a></li>
+                    <li><a href="{% url 'core:register' %}">Cadastre-se</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
                     <li><a href="#">Entrar</a></li>
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#cadastrar">Cadastre-se</a></li>
+                    <li><a href="{% url 'core:register' %}">Cadastre-se</a></li>
                 </ul>
             </div>
         </nav>
@@ -63,7 +63,7 @@
                                             </button>
                                         </div>
                                     </form>
-                                    <div>Não é cadastrado? <a href="#cadastrar">Cadastre-se</a></div>
+                                    <div>Não é cadastrado? <a href="{% url 'core:register' %}">Cadastre-se</a></div>
                                     <div>Esqueceu sua senha? <a href="#">Nova senha</a></div>
                                 </div>
                             </div>
@@ -217,7 +217,7 @@
 
                 <!-- button cadastre -->
                 <div class="row center">
-                    <a class="waves-effect waves-light btn-large btn-cadastrar">Cadastra-se</a>
+                    <a href="{% url 'core:register' %}" class="waves-effect waves-light btn-large btn-cadastrar">Cadastra-se</a>
                 </div>
                 <!-- button cadastre -->
 
