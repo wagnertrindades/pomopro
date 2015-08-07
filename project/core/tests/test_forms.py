@@ -27,3 +27,17 @@ class LoginTestCase(TestCase):
         path = reverse('core:home')
         response = client.post(path, data)
         self.assertEqual(response.status_code, 200)
+
+    def test_register_form_error(self):
+        data = {'nome': 'tests', 'email': 'tests@tests.com', 'password1': '123', 'password2': 'ref'}
+        client = Client()
+        path = reverse('core:register')
+        response = client.post(path, data)
+        self.assertFormError(response, 'form', 'password2', 'A confirmação não está correta')
+
+    def test_register_form_sucess(self):
+        data = {'nome': 'tests', 'email': 'tests@tests.com', 'password1': '1234', 'password2': '1234'}
+        client = Client()
+        path = reverse('core:register')
+        response = client.post(path, data)
+        self.assertEqual(response.status_code, 200)

@@ -24,3 +24,4 @@ def register(resquest):
         'form' : form
     }
     return render(resquest, template_name, context)
+
