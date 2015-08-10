@@ -59,6 +59,11 @@ nav ul a, nav .brand-logo {
     margin-bottom: 40px;
 }
 
+/* Card Password Reset*/
+.pass-reset-card{
+    margin-bottom: 98px;
+}
+
 /* Img IOS */
 .img-ios{
     height: 45px;

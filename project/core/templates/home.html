@@ -15,8 +15,8 @@
                     <li><a href="{% url 'core:register' %}">Cadastre-se</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
-                    <li><a href="#">Entrar</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="{% url 'core:home' %}">Entrar</a></li>
+                    <li><a href="{% url 'core:home' %}#sobre">Sobre</a></li>
                     <li><a href="{% url 'core:register' %}">Cadastre-se</a></li>
                 </ul>
             </div>
@@ -67,7 +67,7 @@
                                         </div>
                                     </form>
                                     <div>Não é cadastrado? <a href="{% url 'core:register' %}">Cadastre-se</a></div>
-                                    <div>Esqueceu sua senha? <a href="#">Nova senha</a></div>
+                                    <div>Esqueceu sua senha? <a href="{% url 'core:password_reset' %}">Nova senha</a></div>
                                 </div>
                             </div>
                         </div>
@@ -218,7 +218,7 @@
 
                 <!-- button cadastre -->
                 <div class="row center">
-                    <a href="{% url 'core:register' %}" class="waves-effect waves-light btn-large btn-cadastrar">Cadastra-se</a>
+                    <a href="{% url 'core:register' %}" class="waves-effect waves-light btn-large btn-cadastrar">Cadastre-se</a>
                 </div>
                 <!-- button cadastre -->
 
