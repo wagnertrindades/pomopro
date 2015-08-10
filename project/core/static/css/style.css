@@ -64,6 +64,17 @@ nav ul a, nav .brand-logo {
     margin-bottom: 98px;
 }
 
+/* Pag success forms */
+#success-form{
+    min-height: 663px;
+}
+#success-form p{
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #c8e6c9;
+    color: #2e7d32;
+    border-radius: 2px;
+}
 /* Img IOS */
 .img-ios{
     height: 45px;
