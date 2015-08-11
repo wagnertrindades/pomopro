@@ -1,9 +1,16 @@
 from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.forms import SetPasswordForm
 from django.contrib.auth import authenticate, login, get_user_model
+from django.contrib.auth.decorators import login_required
 
 from .forms import RegisterForm, PasswordResetForm
 from .models import PasswordReset 
+
+@login_required
+def dashboard(resquest):
+    template_name = 'accounts/dashboard.html'
+    context = {}
+    return render(resquest, template_name, context)
 
 def register(resquest):
     template_name = 'accounts/register.html'
