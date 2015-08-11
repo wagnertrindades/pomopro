@@ -41,3 +41,10 @@ class LoginTestCase(TestCase):
         path = reverse('core:register')
         response = client.post(path, data)
         self.assertEqual(response.status_code, 200)
+
+    def test_password_reset(self):
+        data = {'email': 'test@test.com'}
+        client = Client()
+        path = reverse('core:password_reset')
+        response = client.post(path, data)
+        self.assertEqual(response.status_code, 200)
