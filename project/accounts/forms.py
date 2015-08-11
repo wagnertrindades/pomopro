@@ -55,3 +55,9 @@ class PasswordResetForm(forms.Form):
             'reset': reset, 
         }
         send_mail_template(subject, template_name, context, [user.email])
+
+class EditAccountForm(forms.ModelForm):
+
+    class Meta:
+        model = User
+        fields = ['image', 'name', 'email', 'date_birth']

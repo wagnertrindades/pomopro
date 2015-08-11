@@ -11,4 +11,5 @@ urlpatterns = patterns('',
     url(r'^confirmar-nova-senha/(?P<key>\w+)$', 
         'project.accounts.views.password_reset_confirm', name='password_reset_confirm'),
     url(r'^dashboard/$', 'project.accounts.views.dashboard', name='dashboard'),
+    url(r'^editar/$', 'project.accounts.views.edit', name='edit'),
 )

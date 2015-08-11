@@ -58,3 +58,8 @@ nav.top-nav a.page-title {
     font-size: 7rem;
     margin: 4rem 0;
 }
+
+/* Página Editar */
+label[for="id_image"]{
+    margin-top: -40px;
+}

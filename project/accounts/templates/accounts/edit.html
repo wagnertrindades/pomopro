@@ -24,8 +24,8 @@
                 
                 <!-- menu editar -->
                 <div class="collection">
-                    <a href="#!" class="collection-item active">Meu perfil</a>
-                    <a href="{% url 'accounts:edit' %}" class="collection-item">Editar perfil</a>
+                    <a href="{% url 'accounts:dashboard' %}" class="collection-item">Meu perfil</a>
+                    <a href="{% url 'accounts:edit' %}" class="collection-item active">Editar perfil</a>
                     <a href="#!" class="collection-item">Editar senha</a>
                 </div>
                 <!-- /menu editar -->
@@ -59,7 +59,7 @@
                     <div class="container">
                         <div class="nav-wrapper">
                             <a class="page-title">
-                                Meu Perfil
+                                Editar Perfil
                             </a>
                         </div>
                     </div>
@@ -67,17 +67,26 @@
                 <!-- /title -->
 
                 <div class="container content-perfil">
-                    <div class="row message">
-                        {% for message in messages  %}
-                            <p>{{ message }}</p>
+                    <form class="col s12 m6" method="post">
+                        {% csrf_token %}
+                        {{ form.non_field_errors }}
+
+                        {% for field in form %}
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    {{ field }}
+                                    {{ field.label_tag }}
+                                    {{ field.errors }}
+                                </div>
+                            </div>
                         {% endfor %}
-                    </div>
-                    <img src="img/mussum.jpg" alt="" class="circle">
-                    <ul>
-                        <li><strong>Nome</strong>: {{ user }}</li>
-                        <li><strong>E-mail</strong>: {{ user.email }}</li>
-                        <li><strong>Data Nascimento</strong>: {{ user.date_birth|date:'d/m/Y' }}</li>
-                    </ul>
+
+                        <div class="card-action">
+                            <button class="btn waves-effect waves-light" type="submit" name="action">
+                                Alterar
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
             <!-- /content -->
