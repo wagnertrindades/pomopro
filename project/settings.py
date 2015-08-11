@@ -37,6 +37,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # My Apps
+    'project.accounts',
     'project.core',
 )
 
@@ -99,7 +100,7 @@ EMAIL_PORT = 587
 CONTACT_EMAIL = 'wtrindades@hotmail.com'
 
 # Auth
-LOGIN_URL = 'core:home'
+LOGIN_URL = 'accounts:home'
 LOGIN_REDIRECT_URL = 'core:timer'
-LOGOUT_URL = 'core:home'
-AUTH_USER_MODEL = 'core.User'
+LOGOUT_URL = 'accounts:home'
+AUTH_USER_MODEL = 'accounts.User'

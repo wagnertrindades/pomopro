@@ -1,4 +1,4 @@
-{% extends "home.html" %}
+{% extends "accounts/home.html" %}
 
 {% load static %}
 
@@ -45,8 +45,8 @@
                                             </button>
                                         </div>
                                     </form>
-                                    <div>Já é cadastrado? <a href="{% url 'core:home' %}">Fazer login</a></div>
-                                    <div>Esqueceu sua senha? <a href="{% url 'core:password_reset' %}">Nova senha</a></div>
+                                    <div>Já é cadastrado? <a href="{% url 'accounts:home' %}">Fazer login</a></div>
+                                    <div>Esqueceu sua senha? <a href="{% url 'accounts:password_reset' %}">Nova senha</a></div>
                                 </div>
                             </div>
                         </div>

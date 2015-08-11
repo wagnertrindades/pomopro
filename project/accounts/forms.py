@@ -49,7 +49,7 @@ class PasswordResetForm(forms.Form):
         key = generate_hash_key(user.email)
         reset = PasswordReset(key=key, user=user)
         reset.save()
-        template_name = 'password_reset_mail.html'
+        template_name = 'accounts/password_reset_mail.html'
         subject = 'Criar nova senha no Pomopro'
         context = {
             'reset': reset, 

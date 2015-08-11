@@ -7,17 +7,17 @@
         <!-- menu -->
         <nav class="white">
             <div class="nav-wrapper container">
-                <a href="{% url 'core:home' %}" class="brand-logo">Pomopro</a>
+                <a href="{% url 'accounts:home' %}" class="brand-logo">Pomopro</a>
                 <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="small material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="{% url 'core:home' %}">Entrar</a></li>
-                    <li><a href="{% url 'core:home' %}#sobre">Sobre</a></li>
-                    <li><a href="{% url 'core:register' %}">Cadastre-se</a></li>
+                    <li><a href="{% url 'accounts:home' %}">Entrar</a></li>
+                    <li><a href="{% url 'accounts:home' %}#sobre">Sobre</a></li>
+                    <li><a href="{% url 'accounts:register' %}">Cadastre-se</a></li>
                 </ul>
                 <ul class="side-nav" id="mobile-demo">
-                    <li><a href="{% url 'core:home' %}">Entrar</a></li>
-                    <li><a href="{% url 'core:home' %}#sobre">Sobre</a></li>
-                    <li><a href="{% url 'core:register' %}">Cadastre-se</a></li>
+                    <li><a href="{% url 'accounts:home' %}">Entrar</a></li>
+                    <li><a href="{% url 'accounts:home' %}#sobre">Sobre</a></li>
+                    <li><a href="{% url 'accounts:register' %}">Cadastre-se</a></li>
                 </ul>
             </div>
         </nav>
@@ -66,8 +66,8 @@
                                             </button>
                                         </div>
                                     </form>
-                                    <div>Não é cadastrado? <a href="{% url 'core:register' %}">Cadastre-se</a></div>
-                                    <div>Esqueceu sua senha? <a href="{% url 'core:password_reset' %}">Nova senha</a></div>
+                                    <div>Não é cadastrado? <a href="{% url 'accounts:register' %}">Cadastre-se</a></div>
+                                    <div>Esqueceu sua senha? <a href="{% url 'accounts:password_reset' %}">Nova senha</a></div>
                                 </div>
                             </div>
                         </div>
@@ -218,7 +218,7 @@
 
                 <!-- button cadastre -->
                 <div class="row center">
-                    <a href="{% url 'core:register' %}" class="waves-effect waves-light btn-large btn-cadastrar">Cadastre-se</a>
+                    <a href="{% url 'accounts:register' %}" class="waves-effect waves-light btn-large btn-cadastrar">Cadastre-se</a>
                 </div>
                 <!-- button cadastre -->
 
