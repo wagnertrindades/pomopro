@@ -44,7 +44,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     image = models.ImageField(
         upload_to="core/images", verbose_name='Imagem', null=True, blank=True
     )
-    is_staff = models.BooleanField('É da equipe?', blank=True, default=False)
+    is_staff = models.BooleanField('É administrador?', blank=True, default=False)
 
     created_at = models.DateTimeField('Criado em', auto_now_add=True)
     updated_at = models.DateTimeField('Atualizado em', auto_now=True)
