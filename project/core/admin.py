@@ -1,3 +1,9 @@
 from django.contrib import admin
 
-# Register your models here.
+from .models import Timer
+
+class TimerAdmin(admin.ModelAdmin):
+
+	list_display = ['status', 'user', 'created_at']
+
+admin.site.register(Timer, TimerAdmin)

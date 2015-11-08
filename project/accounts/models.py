@@ -2,6 +2,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractBaseUser, PermissionsMixin, BaseUserManager
 from django.conf import settings
 
+
 class CustomUserManager(BaseUserManager):
     use_in_migrations = True
 

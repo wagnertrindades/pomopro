@@ -33,7 +33,15 @@
                         <i class="material-icons red-text">play_circle_outline</i>
                         Pomodoro's
                     </div>
-                    <div class="collapsible-body teal lighten-3"><p>Lorem ipsum dolor sit amet.</p></div>
+                    <div class="collapsible-body teal lighten-3">
+
+                        {% for pomodoro in user.timer.all %}
+                            {% if pomodoro.status == 0 %}
+                                <span>#</span>
+                            {% endif %}
+                        {% endfor %}
+
+                    </div>
                 </li>
                 <li>
                     <div class="collapsible-header">
@@ -79,7 +87,7 @@
             <div class="col m6 offset-m3 content-crono">
                 <!-- buttons pomodoro -->
                 <div class="center">
-                    <a id="pomo-timer" class="waves-effect waves-light btn-large red">
+                    <a href="{% url 'core:add_timer' 0 %}" id="pomo-timer" class="waves-effect waves-light btn-large red">
                         <i class="material-icons left">play_circle_outline</i>
                         Pomodoro
                     </a>
